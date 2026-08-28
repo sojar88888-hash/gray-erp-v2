@@ -1,0 +1,91 @@
+# Project TODO
+
+- [x] Define the version-one scope and non-production accounting boundary for GRAY ERP.
+- [x] Document the core operational and accounting domain model.
+- [x] Create a governed database schema for organizations, roles, customers, suppliers, products, documents, stock movements, journals, and audit events.
+- [x] Apply the initial database migration without seeding accounting or transaction data.
+- [x] Implement role-aware server procedures and immutable audit-event recording.
+- [x] Configure the verified Supabase project credentials for read-only connectivity checks from the GRAY ERP server.
+- [x] Implement the governed company-initialization workflow and connect it to the administration workspace.
+- [x] Implement controlled master-data flows for customers, suppliers, and items with user attribution and audit events.
+- [x] Present read-only audit events to authorized users from the append-only audit log.
+- [x] Enforce server-side permissions for all master-data list procedures and suppress unauthorized client queries.
+- [x] Add authorization tests for master-data read and create procedures.
+- [x] Build a complete Arabic RTL application shell with professional enterprise navigation.
+- [x] Build the executive dashboard with non-fictional empty and readiness states, KPI structure, and analytic visualizations.
+- [x] Build sales, procurement, inventory, accounting, reporting, user-permission, and audit-log workspace pages.
+- [x] Add data-aware loading, empty, error, and access-denied states across module pages.
+- [x] Add unit tests for access controls and domain validations.
+- [x] Verify the Arabic UI on desktop and mobile viewports, then resolve visual defects.
+- [x] Prepare a governed implementation note that states the accounting, authorization, and production-readiness boundaries.
+- [x] Re-run desktop and mobile visual QA after the latest access and audit updates, then resolve any remaining defects.
+- [x] Publish a consolidated governed implementation note covering accounting limits, authorization boundaries, Supabase scope, and production-readiness constraints.
+- [x] Correct the company-setup status response to prevent undefined client-query results.
+- [x] Define the expanded ERP delivery scope and explicit finance-production gate conditions.
+- [x] Rebuild the GRAY ERP visual system as a dense dark institutional control center inspired by the provided reference.
+- [x] Expand navigation for cash and banks, projects, fixed assets, human resources, governance, and settings.
+- [x] Build an operational overview with real-data-safe KPI states, analytics structures, alerts, tasks, and quick actions.
+- [x] Add controllable workspace pages for cash and banks, projects, fixed assets, human resources, and system settings.
+- [x] Add governance gates and readiness indicators that prevent unapproved accounting posting and financial statement issuance.
+- [x] Add tests for financial-gate authorization and readiness validation.
+- [x] Compile and run the financial-readiness route and test suite after the server integration is completed.
+- [x] Enforce the readiness gate inside accounting-posting and financial-statement issuance procedures.
+- [x] Add tRPC integration tests proving blocked readiness rejects posting and statement issuance.
+- [x] Add governed data models and controlled creation flows for cash accounts, projects, fixed assets, employees, and company settings.
+- [x] Apply and verify the expanded database migration without seeding business or financial records.
+- [x] Verify the expanded visual system on desktop and mobile, then resolve defects.
+- [x] Create a checkpoint for the expanded GRAY ERP release.
+- [x] Save a final project checkpoint after verifying the complete task list.
+- [x] Add role-gated tRPC list and creation procedures for cash accounts, projects, fixed assets, and employees, with append-only audit evidence.
+- [x] Build reusable Arabic RTL collection panels for the four expanded operational workspaces.
+- [x] Connect the cash, projects, assets, and human-resources pages to their controlled data panels.
+- [x] Add automated tests for the new mutation input contracts and permission boundaries.
+- [x] Verify the expanded workspace UI on desktop and mobile and publish the validated release.
+- [x] Build controlled company-settings list and update procedures with append-only audit evidence.
+- [x] Connect the system-settings workspace to controlled company settings states and edit actions.
+- [x] Add invalid-input tests for project, fixed-asset, and employee creation contracts.
+- [x] Add controlled commercial-document list and draft-creation flows for quotations, sales invoices, purchase requests, and purchase orders.
+- [x] Build a shared Arabic RTL commercial-document workspace for sales and purchases with document statuses and audit evidence.
+- [x] Add read-only chart-of-accounts and accounting-period registry views with explicit financial-readiness boundaries.
+- [x] Build governed report readiness and operational-summary views without issuing formal financial statements.
+- [x] Add automated tests for commercial-document and accounting-registry permission and input contracts.
+- [x] Add controlled branch listing and default-branch provisioning so company users can create commercial drafts end to end.
+- [x] Replace manual branch, customer, and supplier identifiers with company-scoped record selection controls in the commercial workspace.
+- [x] Surface document-linked audit evidence in the commercial workspace after draft creation.
+- [x] Add administrator-only user directory procedures scoped to the initialized company.
+- [x] Add controlled role-assignment procedures with append-only audit evidence and safeguards against self-demotion.
+- [x] Build an Arabic RTL user-and-permissions workspace with role visibility, role assignment, and bounded company-scope information.
+- [x] Add automated authorization and input-contract tests for user directory and role assignment procedures.
+- [x] Add explicit non-fictional alert and task-state sections to the operational overview, then verify them visually.
+- [x] Save and record the published checkpoint for the validated expanded GRAY ERP release.
+- [x] Upload the approved GRAY GROUP logo as a managed static asset for the web project.
+- [x] Replace the temporary GRAY ERP logo treatment in the desktop and mobile application shell with the approved brand mark.
+- [x] Publish the verified GRAY GROUP logo identity update in a new checkpoint.
+- [x] Document the reference-driven design boundary: visual fidelity only, with no fictional business values or financial posting authority.
+- [x] Rebuild the dashboard information hierarchy, density, card treatment, charts, navigation, and quick actions to match the approved GRAY GROUP dashboard reference.
+- [x] Add a controlled quotation preview aligned with the approved bilingual quotation template.
+- [x] Add a controlled sales-invoice preview aligned with the approved bilingual invoice template.
+- [x] Add a controlled receipt-voucher preview aligned with the approved bilingual receipt template, without creating cash or accounting postings.
+- [x] Rotate development logs and complete a clean post-render verification of the redesigned dashboard and document previews at desktop and mobile breakpoints.
+- [x] Verify that governed company-setup blocks do not emit API error logs during preview QA, then record the clean current module-graph status.
+- [x] Publish the reference-aligned interface update with its tests and governance-boundary documentation.
+- [x] Produce a traceable operational-readiness matrix that classifies every requested function as live, setup-required, governed-blocked, or out of scope.
+- [x] Add line-item entry, totals validation, and controlled lifecycle transitions to commercial documents without financial posting.
+- [x] Add inventory movement workflows sourced from approved operational documents and stock-count adjustments with append-only audit evidence.
+- [x] Add cash receipt and payment draft workflows that retain explicit non-posting status until financial governance gates are passed.
+- [ ] Add server-verified maker-checker approval records and document state transitions with segregation-of-duties controls.
+- [x] Add printable browser layouts and controlled PDF export for quotations, sales invoices, and receipt vouchers based only on live document data.
+- [ ] Extend operational reports for document, inventory, cash-draft, approval, and audit status using database-backed aggregates.
+- [ ] Add company-readiness controls for fiscal policy, currency, tax policy, branch configuration, and accounting-gate evidence status.
+- [ ] Add end-to-end tests for company setup, master data, commercial documents, approvals, inventory, print-preview, and access boundaries.
+- [x] Publish the configured-to-operate release with an explicit pre-go-live checklist and a blocked-by-governance financial posting boundary.
+- [x] Restore the branch-creation export and verify server module loading after the urgent runtime import failure.
+- [x] Add role-gated tRPC procedures for inventory-location and inventory-movement lists and creation with branch, item, and location validation.
+- [x] Build the Arabic RTL inventory control panel for locations and non-financial in/out/transfer/positive-adjustment movement records.
+- [x] Apply the company-setup query guard to inventory data requests and add permission and input-contract coverage for the new inventory procedures.
+- [x] Add non-financial document review transitions with role-gated decisions, sequenced states, maker-decision separation, and append-only operational audit evidence.
+- [x] Add controlled live-document print views with recorded print evidence for authorized sales and procurement users.
+- [x] Expand the operational report summary with live document, inventory, location, project, workforce, and cash-account activity indicators while retaining the financial-statement gate.
+- [x] Expose the server-derived financial-approval and identity-evidence gate as an explicit governed-blocked state rather than fabricating a formal approval record.
+- [x] Update the operational-readiness matrix to distinguish live operational workflows from financial approval, reconciliation, posting, and statutory-reporting boundaries.
+- [x] Create an administrative pre-go-live checklist that documents acceptance tests, client-owned setup actions, and the financial gates that remain blocked.

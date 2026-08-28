@@ -1,0 +1,22 @@
+CREATE TABLE `cashDrafts` (
+	`id` bigint AUTO_INCREMENT NOT NULL,
+	`companyId` int NOT NULL,
+	`branchId` int NOT NULL,
+	`cashAccountId` int NOT NULL,
+	`voucherNumber` varchar(64) NOT NULL,
+	`cashDraftKind` enum('receipt','payment') NOT NULL,
+	`cashDraftCounterpartyType` enum('customer','supplier','other') NOT NULL,
+	`customerId` int,
+	`supplierId` int,
+	`counterpartyName` varchar(255),
+	`amount` decimal(18,2) NOT NULL,
+	`currency` varchar(3) NOT NULL,
+	`transactionDate` timestamp NOT NULL,
+	`narrative` varchar(1000) NOT NULL,
+	`cashDraftStatus` enum('draft','in_review','cancelled','blocked_pending_authority') NOT NULL DEFAULT 'draft',
+	`createdBy` int NOT NULL,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `cashDrafts_id` PRIMARY KEY(`id`),
+	CONSTRAINT `cash_drafts_company_voucher_unique` UNIQUE(`companyId`,`voucherNumber`)
+);

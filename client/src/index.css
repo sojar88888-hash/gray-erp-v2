@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "IBM Plex Sans Arabic", Arial, sans-serif;
+  --font-serif: "IBM Plex Serif", "IBM Plex Sans Arabic", serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.82rem;
+  --background: oklch(0.971 0.004 128);
+  --foreground: oklch(0.23 0.02 153);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.23 0.02 153);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.23 0.02 153);
+  --primary: oklch(0.33 0.07 159);
+  --primary-foreground: oklch(0.99 0.01 150);
+  --secondary: oklch(0.95 0.012 150);
+  --secondary-foreground: oklch(0.31 0.035 158);
+  --muted: oklch(0.95 0.005 145);
+  --muted-foreground: oklch(0.48 0.02 155);
+  --accent: oklch(0.94 0.02 150);
+  --accent-foreground: oklch(0.29 0.05 158);
+  --destructive: oklch(0.58 0.2 28);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0.01 145);
+  --input: oklch(0.9 0.01 145);
+  --ring: oklch(0.52 0.1 158);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { direction: rtl; background: #f6f5f1; }
+  body { @apply bg-background text-foreground; font-family: "IBM Plex Sans Arabic", Arial, sans-serif; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), [type="button"]:not(:disabled), [type="submit"]:not(:disabled), [type="reset"]:not(:disabled), a[href] { @apply cursor-pointer; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button, a { transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+  button:active { transform: scale(0.98); }
+}
